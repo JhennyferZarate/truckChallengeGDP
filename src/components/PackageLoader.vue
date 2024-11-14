@@ -32,13 +32,13 @@
                 <h3 class="text-lg font-semibold mb-2">{{ MESSAGES.LABELS.SELECTED_PACKAGES }}</h3>
                 <div class="flex justify-center items-center space-x-4">
                     <base-card v-for="(size, index) in state.selectedPackages" :key="index"
-                        class="w-24 h-24 flex flex-col items-center justify-center text-center">
+                        class="w-24 h-24 flex items-center justify-center text-center">
                         <span class="material-symbols-outlined text-4xl">inventory_2</span>
-                        <span class="mt-2 font-bold">{{ size }}</span>
+                        <span class="font-bold">{{ size }}</span>
                     </base-card>
                 </div>
 
-                <div class="mt-4 flex justify-center items-center">
+                <div class="mt-8 flex justify-center items-center">
                     <span class="material-symbols-outlined text-5xl">local_shipping</span>
                     <div class="ml-4">
                         <p>{{ MESSAGES.LABELS.TRUCK_SIZE }}: {{ state.truckSize }}</p>
